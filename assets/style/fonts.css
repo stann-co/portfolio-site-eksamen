@@ -1,0 +1,23 @@
+/* Hyperlegible Font Face */
+@font-face {
+	font-family: "Hyperlegible";
+	src: url("../fonts/AtkinsonHyperlegibleNext-Regular.ttf") format("true-type");
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Hyperlegible Bold */
+@font-face {
+	font-family: "Hyperlegible";
+	src: url("../fonts/AtkinsonHyperlegibleNext-Medium.ttf") format("true-type");
+	font-weight: bold;
+	font-style: normal;
+}
+
+/* Hyperlegible Italic */
+@font-face {
+	font-family: "Hyperlegible";
+	src: url("../fonts/AtkinsonHyperlegibleNext-Italic.ttf") format("true-type");
+	font-weight: normal;
+	font-style: italic;
+}

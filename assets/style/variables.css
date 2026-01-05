@@ -1,7 +1,12 @@
 :root {
+	/* colors */
 	--background: #F2E6D6;
 	--light: #FFF8EF;
 	--dark: #827570;
 	--gray: #E1D0BD;
+	--gray-dark: #cbb7a1;
 	--accent: #E3856D;
+
+	/* shadow */
+	--shadow-nav: 2px 2px 0px var(--gray-dark);
 }
