@@ -168,9 +168,15 @@ p{
 
 		img{
 			width: 100%;
+			max-width: 400px;
 			height: auto;
 
-			filter: sepia();
+			transition: all 0.2s linear;
+
+			filter: brightness(73%) contrast(65%) saturate(0%) grayscale(100%) sepia(61%) hue-rotate(352deg);
+			&:hover, &:active{
+				filter: brightness(100%) contrast(100%) saturate(100%) grayscale(0%) sepia(0%) hue-rotate(0deg);
+			}
 		}
 
 		p{
