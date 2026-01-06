@@ -227,6 +227,11 @@ p{
 		padding: 1px 2px;
 		white-space: nowrap;
 	}
+
+	&>em{
+		white-space: nowrap;
+		font-weight: bold;
+	}
 }
 
 a.button{
