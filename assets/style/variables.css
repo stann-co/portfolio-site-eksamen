@@ -8,6 +8,6 @@
 	--accent: #E3856D;
 
 	/* shadow */
-	--shadow-nav: 4px 4px 0px var(--gray-dark);
+	--shadow-box: 4px 4px 0px var(--gray-dark);
 	--shadow-h1: 2.2px 2.2px 0px var(--gray-dark);
 }
