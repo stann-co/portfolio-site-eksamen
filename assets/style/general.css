@@ -106,12 +106,9 @@ header{
 main{
 	box-sizing: border-box;
 	width: 100%;
-	/* background-color: green; */
 
 	section{
-		/* margin: 0 20px; */
-		margin-left: 20px;
-		margin-right: 4px; /* to compensate for box shadow */
+		margin: 0 20px;
 		margin-bottom: 20px;
 		min-height: 400px;
 		background-color: var(--light);
@@ -125,12 +122,11 @@ main{
 }
 
 .aside-spacer{
-	width: 60px;
+	width: 40px;
 }
 
 aside{
 	box-sizing: border-box;
-	/* background-color: yellow; */
 	width: 52px; /* i dont know why it doesn't have same width as spacer */
 	padding-top: 24px;
 
