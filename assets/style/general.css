@@ -296,6 +296,11 @@ h2{
 
 p{
 	font-size: 11px;
+
+	@media (min-width: 700px) {
+		font-size: 14px;
+	}
+
 	margin-bottom: 12px;
 	line-height: 1.4em;
 	&>a{
