@@ -3,22 +3,72 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>OMG MIG</title>
+	<title>OM MIG</title>
 	<link rel="stylesheet" href="../assets/style/variables.css">
 	<link rel="stylesheet" href="../assets/style/fonts.css">
 	<link rel="stylesheet" href="../assets/style/general.css">
 </head>
 <body>
+	<div class="background">
+		<svg class="bg-lines" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+			<pattern id="lines-pattern" x="0" y="0" width="400" height="400" patternUnits="userSpaceOnUse">
+				<line x1="0" y1="400" x2="400" y2="0" stroke="white" stroke-width="2" vector-effect="non-scaling-stroke" />
+				<line x1="0" y1="440" x2="400" y2="40" stroke="white" stroke-width="2" vector-effect="non-scaling-stroke" />
+				<line x1="0" y1="480" x2="400" y2="80" stroke="white" stroke-width="2" vector-effect="non-scaling-stroke" />
+				<!-- same pattern on top to make it seamless -->
+				<line x1="0" y1="0" x2="400" y2="-400" stroke="white" stroke-width="2" vector-effect="non-scaling-stroke" />
+				<line x1="0" y1="40" x2="400" y2="-360" stroke="white" stroke-width="2" vector-effect="non-scaling-stroke" />
+				<line x1="0" y1="80" x2="400" y2="-320" stroke="white" stroke-width="2" vector-effect="non-scaling-stroke" />
+			</pattern>
+			<rect width="100%" height="100%" fill="url(#lines-pattern)" />
+		</svg>
+
+		<svg class="bg-circles-1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+			<pattern id="circle1-pattern" x="0" y="0" width="800" height="800" patternUnits="userSpaceOnUse">
+				<g id="circle-rotator" transform="rotate(0 400 400)">
+					<circle cx="400" cy="400" r="200" stroke="white" stroke-width="2" fill="none" vector-effect="non-scaling-stroke" />
+					<circle cx="400" cy="400" r="190" stroke="white" stroke-width="2" fill="none" vector-effect="non-scaling-stroke" />
+					<line transform="rotate(0   400 400)" x1="190" y1="400" x2="220" y2="400" stroke="white" stroke-width="2" vector-effect="non-scaling-stroke" />
+					<line transform="rotate(20  400 400)" x1="190" y1="400" x2="220" y2="400" stroke="white" stroke-width="2" vector-effect="non-scaling-stroke" />
+					<line transform="rotate(40  400 400)" x1="190" y1="400" x2="220" y2="400" stroke="white" stroke-width="2" vector-effect="non-scaling-stroke" />
+					<line transform="rotate(60  400 400)" x1="190" y1="400" x2="220" y2="400" stroke="white" stroke-width="2" vector-effect="non-scaling-stroke" />
+					<line transform="rotate(80  400 400)" x1="190" y1="400" x2="220" y2="400" stroke="white" stroke-width="2" vector-effect="non-scaling-stroke" />
+					<line transform="rotate(100 400 400)" x1="190" y1="400" x2="220" y2="400" stroke="white" stroke-width="2" vector-effect="non-scaling-stroke" />
+					<line transform="rotate(120 400 400)" x1="190" y1="400" x2="220" y2="400" stroke="white" stroke-width="2" vector-effect="non-scaling-stroke" />
+					<line transform="rotate(140 400 400)" x1="190" y1="400" x2="220" y2="400" stroke="white" stroke-width="2" vector-effect="non-scaling-stroke" />
+					<line transform="rotate(160 400 400)" x1="190" y1="400" x2="220" y2="400" stroke="white" stroke-width="2" vector-effect="non-scaling-stroke" />
+					<line transform="rotate(180 400 400)" x1="190" y1="400" x2="220" y2="400" stroke="white" stroke-width="2" vector-effect="non-scaling-stroke" />
+					<line transform="rotate(200 400 400)" x1="190" y1="400" x2="220" y2="400" stroke="white" stroke-width="2" vector-effect="non-scaling-stroke" />
+					<line transform="rotate(220 400 400)" x1="190" y1="400" x2="220" y2="400" stroke="white" stroke-width="2" vector-effect="non-scaling-stroke" />
+					<line transform="rotate(240 400 400)" x1="190" y1="400" x2="220" y2="400" stroke="white" stroke-width="2" vector-effect="non-scaling-stroke" />
+					<line transform="rotate(260 400 400)" x1="190" y1="400" x2="220" y2="400" stroke="white" stroke-width="2" vector-effect="non-scaling-stroke" />
+					<line transform="rotate(280 400 400)" x1="190" y1="400" x2="220" y2="400" stroke="white" stroke-width="2" vector-effect="non-scaling-stroke" />
+					<line transform="rotate(300 400 400)" x1="190" y1="400" x2="220" y2="400" stroke="white" stroke-width="2" vector-effect="non-scaling-stroke" />
+					<line transform="rotate(320 400 400)" x1="190" y1="400" x2="220" y2="400" stroke="white" stroke-width="2" vector-effect="non-scaling-stroke" />
+					<line transform="rotate(340 400 400)" x1="190" y1="400" x2="220" y2="400" stroke="white" stroke-width="2" vector-effect="non-scaling-stroke" />
+				</g>
+			</pattern>
+			<rect width="800px" height="100%" fill="url(#circle1-pattern)" />
+		</svg>
+
+		<svg class="bg-circles-2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+			<rect width="800px" height="100%" fill="url(#circle1-pattern)" />
+		</svg>
+	</div>
+	
 	<header>
-		<nav>
-			<a 											href="../">FORSIDE</a>
-			<a 											href="../portfolio/">PORTFOLIO</a>
-			<a class="active-page" 	href="../om_mig/">OM MIG</a>
-		</nav>
+		<div>
+			<nav>
+				<a href="../">FORSIDE</a>
+				<a href="../portfolio/">PORTFOLIO</a>
+				<a class="active-page" href="../om_mig/">OM MIG</a>
+			</nav>
+			<button onclick="toggleDarkmode()" class="darkmode"></button>
+		</div>
 	</header>
 
+	<div class="outher-container">
 	<h1>OM MIG<em> - Jack Conradsen</em></h1>
-
 	<div class="container">
 		<main>
 			<section>
@@ -123,6 +173,7 @@
 				<a href="#hvad-jeg-har-lært"></a>
 			</div>
 		</aside>
+	</div>
 	</div>
 
 	<footer>

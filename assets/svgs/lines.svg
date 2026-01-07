@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" vector-effect="non-scaling">
+	<line x1="0" y1="400" x2="400" y2="0" stroke="white" stroke-width="2" vector-effect="non-scaling-stroke" />
+	<line x1="0" y1="440" x2="400" y2="40" stroke="white" stroke-width="2" vector-effect="non-scaling-stroke" />
+   <line x1="0" y1="480" x2="400" y2="80" stroke="white" stroke-width="2" vector-effect="non-scaling-stroke" />
+
+   <!-- same pattern on top to make it seamless -->
+	<line x1="0" y1="0"  x2="400" y2="-400" stroke="white" stroke-width="2" vector-effect="non-scaling-stroke" />
+	<line x1="0" y1="40" x2="400" y2="-360" stroke="white" stroke-width="2" vector-effect="non-scaling-stroke" />
+   <line x1="0" y1="80" x2="400" y2="-320" stroke="white" stroke-width="2" vector-effect="non-scaling-stroke" />
+</svg>

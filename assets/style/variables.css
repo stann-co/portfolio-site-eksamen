@@ -1,13 +1,23 @@
 :root {
-	/* colors */
-	--background: #F2E6D6;
+	/* colors - light mode */
 	--light: #FFF8EF;
-	--dark: #827570;
+	--background: #F2E6D6;
 	--gray: #E1D0BD;
 	--gray-dark: #cbb7a1;
+	--dark: #827570;
 	--accent: #E3856D;
 
 	/* shadow */
 	--shadow-box: 4px 4px 0px var(--gray-dark);
 	--shadow-h1: 2.2px 2.2px 0px var(--gray-dark);
+
+	&.dark-mode{
+		/* colors - dark mode */
+		--light: #2c231d;
+		--background: #1a1410;
+		--gray: #443828;
+		--gray-dark: #2c231a;
+		--dark: #b6956c;
+		--accent: #da772c;
+	}
 }
